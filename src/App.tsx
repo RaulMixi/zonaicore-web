@@ -10,8 +10,15 @@ function App() {
     <div className="app-shell">
       <aside className="sidebar">
         <a className="brand" href="#inicio" aria-label="Zonai, inicio">
-          <span className="brand-mark">z</span>
-          <span>zonai<span className="brand-period">.</span></span>
+          <span className="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path className="rune-frame" d="M24 3.8 39.7 12v19L24 44.2 8.3 31V12L24 3.8Z" />
+              <path className="rune-line" d="M15.5 15.5h17L18 32.5h14.5" />
+              <path className="rune-accent" d="m24 8.5 2 3.5-2 3.5-2-3.5 2-3.5ZM11.8 29.4l3.8.3.3 3.8-3.8-.3-.3-3.8ZM32.1 33.3l.3-3.8 3.8-.3-.3 3.8-3.8.3Z" />
+              <circle className="rune-orb" cx="24" cy="24" r="2.1" />
+            </svg>
+          </span>
+          <span>ZONAI<span className="brand-period">.</span></span>
         </a>
 
         <div className="workspace-label">TU ESPACIO</div>

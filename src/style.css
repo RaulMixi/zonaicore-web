@@ -33,9 +33,14 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   width: 245px;
 }
-.brand { align-items: center; display: flex; font: 800 23px 'Manrope', sans-serif; gap: 9px; letter-spacing: -1.2px; padding: 0 10px; }
-.brand-mark { align-items: center; background: #526b48; border-radius: 11px; color: #fff; display: flex; font: 800 20px 'Manrope', sans-serif; height: 33px; justify-content: center; width: 33px; }
-.brand-period { color: #83946f; }
+.brand { align-items: center; color: #263d38; display: flex; font: 800 18px 'Manrope', sans-serif; gap: 10px; letter-spacing: 1.1px; padding: 0 10px; }
+.brand-mark { align-items: center; background: radial-gradient(circle at 35% 28%, #376b5e, #193c37 76%); border: 1px solid #a5854a; border-radius: 12px; box-shadow: 0 3px 10px #193c3726, inset 0 0 0 2px #ffffff12; display: flex; height: 38px; justify-content: center; overflow: hidden; width: 38px; }
+.brand-mark svg { height: 32px; width: 32px; }
+.rune-frame { stroke: #d3b66e; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.15; }
+.rune-line { stroke: #e3e8c6; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; }
+.rune-accent { fill: #d5b45f; }
+.rune-orb { fill: #a9d4b3; filter: drop-shadow(0 0 2px #b5edc2); }
+.brand-period { color: #b58b45; }
 .workspace-label, .eyebrow { color: #8b8e83; font-size: 10px; font-weight: 700; letter-spacing: 1.25px; }
 .workspace-label { margin: 56px 12px 14px; }
 nav { display: grid; gap: 5px; }
@@ -96,8 +101,9 @@ footer span { color: #7b8573; margin-left: 5px; }
 }
 @media (max-width: 620px) {
   .sidebar { border-bottom: 1px solid var(--line); border-right: 0; bottom: auto; height: auto; padding: 13px 16px; position: sticky; top: 0; width: 100%; z-index: 2; }
-  .brand { font-size: 19px; }
-  .brand-mark { border-radius: 9px; height: 29px; width: 29px; }
+  .brand { font-size: 16px; }
+  .brand-mark { border-radius: 10px; height: 34px; width: 34px; }
+  .brand-mark svg { height: 29px; width: 29px; }
   .workspace-label, .sidebar-bottom { display: none; }
   nav { display: flex; gap: 4px; margin-top: 12px; overflow-x: auto; }
   .nav-link { flex: 0 0 auto; font-size: 11px; gap: 6px; padding: 8px 9px; }
