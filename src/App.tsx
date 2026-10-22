@@ -11,12 +11,7 @@ function App() {
       <aside className="sidebar">
         <a className="brand" href="#inicio" aria-label="Zonai, inicio">
           <span className="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path className="rune-frame" d="M24 3.8 39.7 12v19L24 44.2 8.3 31V12L24 3.8Z" />
-              <path className="rune-line" d="M15.5 15.5h17L18 32.5h14.5" />
-              <path className="rune-accent" d="m24 8.5 2 3.5-2 3.5-2-3.5 2-3.5ZM11.8 29.4l3.8.3.3 3.8-3.8-.3-.3-3.8ZM32.1 33.3l.3-3.8 3.8-.3-.3 3.8-3.8.3Z" />
-              <circle className="rune-orb" cx="24" cy="24" r="2.1" />
-            </svg>
+            <img src={`${import.meta.env.BASE_URL}zonai-seal.svg`} alt="" />
           </span>
           <span>ZONAI<span className="brand-period">.</span></span>
         </a>
@@ -90,7 +85,9 @@ function App() {
             <div className="eyebrow">UN MOMENTO PARA TI</div>
             <h2>¿Qué tienes en mente?</h2>
             <p>Este espacio irá tomando forma con las cosas que quieras organizar.</p>
-            <div className="focus-decoration" aria-hidden="true"><span>z</span></div>
+            <div className="focus-decoration" aria-hidden="true">
+              <img src={`${import.meta.env.BASE_URL}zonai-seal.svg`} alt="" />
+            </div>
             <button className="soft-button" type="button" disabled>Próximamente <span>↗</span></button>
           </article>
         </section>
